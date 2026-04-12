@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+body {
+  color: #896f1b;
+  font-size: 18px;
+  background-color: rgb(216, 192, 160);
+}
+
+.container {
+  background-color: #eddeb5;
+  width: 100%;
+}
+
+h1 {
+  /* padding: 32px 0; */
+  font-size: 64px;
+  text-align: center;
+  background-image: url(../img/check_1775119544261.png);
+  background-repeat: repeat;
+  background-size: 128px 128px;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: lighten;
+}
+
+h1 > img {
+  width: 100%;
+  display: block;
+}
+
+h2 {
+  color: #6c3524;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 30%;
+  padding: 30px 0;
+  text-align: center;
+}
+
+h3 {
+  color: #6c3524;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 30%;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+p {
+  line-height: 1.5;
+  letter-spacing: 20%;
+}
+
+ul.nav {
+  padding: 0;
+  list-style: none;
+  background-color: #6c3524;
+}
+
+ul.nav > li {
+  border-bottom: 3px double #ec9e51;
+  width: 100%;
+}
+
+ul.nav > li > a {
+  display: block;
+  padding: 12px 12px;
+  width: 100%;
+  color: #ffffea;
+}
+
+ul.nav > li > a:hover {
+  color: #ec9e51;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #ec9e51;
+}
+
+article {
+  padding: 0 32px;
+}
+
+article ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+article li {
+  background-color: #ffffea;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 25px;
+}
+
+article li:last-child {
+  margin-bottom: 60px;
+}
+
+article li > span {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+dl {
+  width: 100%;
+  height: 150px;
+  background-color: #ffffea;
+  border-radius: 30px;
+  color: #896f1b;
+  font-weight: 500;
+
+  margin: 0 0 25px 0;
+}
+
+dl > dt {
+  padding: 16px 0 0 24px;
+  font-size: 24px;
+}
+
+dl > dd {
+  font-size: 36px;
+  letter-spacing: 30%;
+  margin: 14px auto auto;
+  text-align: center;
+}
+
+dl > dd.furigana_row {
+  font-size: 16px;
+  margin: 1px auto auto;
+}
+
+dl > dd.seimei {
+  margin: -6px auto auto;
+}
+
+footer {
+  height: 120px;
+  width: 100%;
+  background-color: #6c3524;
+}
+footer > p {
+  font-size: 16px;
+  color: #ffffea;
+  text-align: center;
+  padding: 45px 0;
+}
+
+.profile_box {
+  margin-bottom: 48px;
+}
+
+.profile_image {
+  width: 100%;
+  height: 100%;
+  margin: 0 0 25px 0;
+}
+
+.profile_image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile_text {
+  margin-bottom: 60px;
+}
+
+.hobby_bg {
+  display: none;
+}
+
+.hobby_text {
+  margin-bottom: 32px;
+}
+
+.hobby_img {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.hobby_img > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.icon_text {
+  display: block;
+}
+.icon_text::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.icon_gold::before {
+  background-image: url(../img/crown_gold.png);
+}
+
+.icon_silver::before {
+  background-image: url(../img/crown_silver.png);
+}
+
+.icon_bronze::before {
+  background-image: url(../img/crown_bronze.png);
+}
+
+.gumi_bg {
+  display: none;
+}
+
+.onigiri_bg {
+  display: none;
+}
+
+.dogs_text {
+  margin-bottom: 24px;
+}
+
+.dogs_img {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.dogs_img > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.top_text {
+  margin-bottom: 60px;
+  text-align: center;
+  color: #6c3524;
+}
+
+/* PC向け */
+@media (min-width: 769px) {
+  .container {
+    background-color: #eddeb5;
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    font-size: 64px;
+    padding: 60px 0;
+  }
+
+  h3 {
+    font-size: 48px;
+  }
+
+  ul.nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    background-color: #6c3524;
+  }
+
+  ul.nav > li {
+    border-right: 3px double #ec9e51;
+    padding: 0 15px;
+    border-bottom: none;
+    width: auto;
+  }
+
+  ul.nav > li:last-child {
+    border-right: none;
+  }
+
+  ul.nav > li > a {
+    display: block;
+    padding: 12px 0;
+    width: 120px;
+    text-align: center;
+    color: #ffffea;
+  }
+
+  .profile_box {
+    display: flex;
+    margin-bottom: 48px;
+  }
+
+  .profile_image {
+    width: 500px;
+    height: 500px;
+    margin: 0 32px 0 0;
+  }
+
+  .profile_group1 {
+    padding-right: 25.5px;
+  }
+
+  dl {
+    width: 289.5px;
+  }
+
+  dl:last-child {
+    margin: 0;
+  }
+
+  .hobby_box {
+    display: flex;
+    margin-bottom: 32px;
+  }
+
+  article li {
+    width: 568px;
+    margin-bottom: 60px;
+  }
+
+  article li:last-child {
+    margin-bottom: 0;
+  }
+
+  .hobby_bg {
+    display: block;
+    background-image: url("../img/sweater_keitodama.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 568px;
+    height: 480px;
+  }
+
+  .hobby_img {
+    width: 500px;
+    height: auto;
+    margin-bottom: 60px;
+  }
+
+  .gumi_box {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  .gumi_bg {
+    display: block;
+    width: 582px;
+    height: 480px;
+    background-image: url("../img/sweets_gumi.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 102px;
+  }
+
+  .onigiri_box {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 60px;
+  }
+
+  .onigiri_bg {
+    display: block;
+    width: 582px;
+    height: 480px;
+    background-image: url("../img/food_konbini_onigiri.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 102px;
+  }
+
+  .dogs_box {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  .dogs_img {
+    width: 552px;
+    height: auto;
+    margin-right: 32px;
+  }
+
+  .dogs_img:last-child {
+    margin-right: 0;
+  }
+
+  footer > p {
+    font-size: 20px;
+  }
+}
