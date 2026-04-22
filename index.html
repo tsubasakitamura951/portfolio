@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ress.min.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
       <h1>My Portfolio</h1>
+      <nav class="desktop-nav" aria-label="PCメニュー">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#works">Works</a>
+      </nav>
     </header>
 
     <main>
       <!-- 自己紹介 -->
-      <section class="about">
+      <section id="about" class="about">
         <h2>About</h2>
         <p>
           Webサイト制作中の実務未経験者です。<br />
@@ -21,11 +27,21 @@
         </p>
       </section>
 
+      <!-- スキル一覧 -->
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
       <!-- 制作物一覧 -->
-      <section class="works">
+      <section id="works" class="works">
         <h2>Works</h2>
 
-        <!-- 作品① -->
+        <!-- 作品1 -->
         <div class="work">
           <img src="site_screenshot.png" alt="人物紹介サイトサムネイル" />
           <div class="work-text">
@@ -34,8 +50,8 @@
             <p><a href="portfolio1/index.html">サイトを見る</a></p>
           </div>
         </div>
-        
-        <!-- 作品② -->
+
+        <!-- 作品2 -->
         <div class="work reverse">
           <img src="portfolio1_wireframe.png" alt="人物紹介サイトワイヤーフレーム" />
           <div class="work-text">
@@ -45,7 +61,7 @@
           </div>
         </div>
 
-        <!-- 作品③ -->
+        <!-- 作品3 -->
         <div class="work">
           <img src="portfolio2_wireframe.png" alt="夏祭りサイトワイヤーフレーム" />
           <div class="work-text">
@@ -60,5 +76,6 @@
     <footer class="footer">
       <p>© 2026 Tsubasa Kitamura / Portfolio</p>
     </footer>
+    <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
