@@ -57,7 +57,7 @@ h2 {
 
 /* about */
 
-.about_text {
+.about-text {
   margin-bottom: 20px;
 }
 
@@ -102,12 +102,12 @@ h2 {
   list-style: none;
 }
 
-.skills_stack {
+.skills-stack {
   display: grid;
   gap: 12px;
 }
 
-.skills_item {
+.skills-item {
   width: 300px;
   padding: 20px;
   margin-bottom: 20px;
@@ -133,7 +133,7 @@ h2 {
   border-radius: 8px;
 }
 
-.work_text {
+.work-text {
   width: 50%;
 }
 
