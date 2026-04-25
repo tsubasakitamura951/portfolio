@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/ress.min.css">
+    <link rel="stylesheet" href="css/ress.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <header class="header">
@@ -21,20 +23,32 @@
       <!-- 自己紹介 -->
       <section id="about" class="about">
         <h2>About</h2>
-        <p>
+        <p class="about_text">
           Webサイト制作中の実務未経験者です。<br />
           HTML/CSSを中心にポートフォリオを作成しています。
         </p>
+
+        <div class="swiper" id="demo-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide s1"><img src="portfolio2_wireframe_thum.png" alt=""></div>
+            <div class="swiper-slide s2"><img src="site_screenshot_thum.png" alt=""></div>
+            <!-- <div class="swiper-slide s3"></div> -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
       </section>
 
       <!-- スキル一覧 -->
       <section id="skills" class="skills">
         <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
+        <div class="skills_stack">
+          <ul>
+            <li class="skills_item" data-aos="fade-left" data-aos-delay="0">HTML</li>
+            <li class="skills_item" data-aos="fade-left" data-aos-delay="300">CSS</li>
+            <li class="skills_item" data-aos="fade-left" data-aos-delay="600">JavaScript</li>
+          </ul>
+        </div>
       </section>
 
       <!-- 制作物一覧 -->
@@ -44,7 +58,7 @@
         <!-- 作品1 -->
         <div class="work">
           <img src="site_screenshot.png" alt="人物紹介サイトサムネイル" />
-          <div class="work-text">
+          <div class="work_text">
             <h3>人物紹介サイト</h3>
             <p>人物の魅力を伝えることを目的としたサイトです。</p>
             <p><a href="portfolio1/index.html">サイトを見る</a></p>
@@ -54,7 +68,7 @@
         <!-- 作品2 -->
         <div class="work reverse">
           <img src="portfolio1_wireframe.png" alt="人物紹介サイトワイヤーフレーム" />
-          <div class="work-text">
+          <div class="work_text">
             <h3>人物紹介サイト ワイヤーフレーム</h3>
             <p>情報設計を意識して作成したワイヤーフレームです。</p>
             <p><a href="portfolio1_wireframe.png">ワイヤーフレーム画像を開く</a></p>
@@ -74,8 +88,10 @@
     </main>
 
     <footer class="footer">
-      <p>© 2026 Tsubasa Kitamura / Portfolio</p>
+      <p>&copy; 2026 Tsubasa Kitamura / Portfolio</p>
     </footer>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
