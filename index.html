@@ -13,15 +13,31 @@
     <header class="header">
       <h1>My Portfolio</h1>
       <nav class="desktop-nav" aria-label="PCメニュー">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#works">Works</a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#works">Works</a></li>
+        </ul>
       </nav>
+      <nav class="mobile-nav" aria-label="モバイルメニュー">
+        <div>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+          </ul>
+        </div>
+      </nav>
+      <button class="hamburger" aria-label="モバイルメニュー開閉ボタン">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </header>
 
     <main>
       <!-- 自己紹介 -->
-      <section id="about" class="about">
+      <section id="about">
         <h2>About</h2>
         <p class="about-text">
           Webサイト制作中の実務未経験者です。<br />
@@ -30,13 +46,12 @@
 
         <div class="swiper" id="demo-swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide s1"><img src="portfolio2_wireframe_thum.png" alt=""></div>
-            <div class="swiper-slide s2"><img src="site_screenshot_thum.png" alt=""></div>
+            <div class="swiper-slide s1"><img src="portfolio2_wireframe_thum.png" alt="" /></div>
+            <div class="swiper-slide s2"><img src="site_screenshot_thum.png" alt="" /></div>
             <!-- <div class="swiper-slide s3"></div> -->
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </section>
 
       <!-- スキル一覧 -->
