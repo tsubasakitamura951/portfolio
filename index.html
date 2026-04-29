@@ -36,15 +36,8 @@
     </header>
 
     <main>
-      <!-- 自己紹介 -->
-      <section id="about">
-        <h2>About</h2>
-        <p class="about-text">
-          職業訓練校のwebデザインコースに通いながら、Webデザイナーとして、 ユーザーにとって分かりやすく、使いやすいサイト制作を目指しています。 現在はHTML・CSS・JavaScriptを用いたコーディングを中心にレスポンシブ対応やUI/UXを意識した設計を学習しています。
-          ポートフォリオでは実際の案件を想定し「目的・ターゲット・課題」を明確にした上で制作しています。 デザインから実装まで一貫して行えるWebデザイナーを目指しています。
-        </p>
-
-        <div class="swiper" id="demo-swiper">
+      <section id="mv">
+        <div class="swiper" id="demo-swiper" data-aos="fade">
           <div class="swiper-wrapper">
             <div class="swiper-slide s1"><img src="portfolio2_wireframe_thum.png" alt="" /></div>
             <div class="swiper-slide s2"><img src="site_screenshot_thum.png" alt="" /></div>
@@ -53,12 +46,23 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
+      <!-- 自己紹介 -->
+      <section id="about">
+        <h2 data-aos="fade">About</h2>
+        <div class="about-text" data-aos="fade-up">
+          <p>職業訓練校のWebデザインコースに通っています。</p>
+          <p>Webデザイナーとして、ユーザーにとって分かりやすく使いやすいサイト制作を目指しています。</p>
+          <p>現在はHTML・CSS・JavaScriptを用いたコーディングを中心に、レスポンシブ対応やUI/UXを意識した設計を学習中です。</p>
+          <p>ポートフォリオでは、実際の案件を想定し、「目的・ターゲット・課題」を明確にした上で制作しています。</p>
+          <p>将来的には、デザインから実装まで一貫して行えるWebデザイナーを目指しています。</p>
+        </div>
+      </section>
 
       <!-- スキル一覧 -->
       <section id="skills" class="skills">
-        <h2>Skills</h2>
+        <h2 data-aos="fade">Skills</h2>
         <ul class="skills-list" data-aos="fade-up">
-          <li >
+          <li>
             <h3>HTML / CSS</h3>
             <p>セマンティックなマークアップとCSSを用いた画面構成が得意です。レスポンシブ対応を意識したレイアウト設計が可能です。</p>
           </li>
@@ -87,10 +91,10 @@
 
       <!-- 制作物一覧 -->
       <section id="works" class="works">
-        <h2>Works</h2>
+        <h2 data-aos="fade">Works</h2>
 
         <!-- 作品1 -->
-        <div class="work">
+        <div class="work" data-aos="fade-up">
           <img src="site_screenshot.png" alt="人物紹介サイトサムネイル" />
           <div class="work-text">
             <h3>人物紹介サイト</h3>
@@ -100,7 +104,7 @@
         </div>
 
         <!-- 作品2 -->
-        <div class="work reverse">
+        <div class="work reverse" data-aos="fade-up">
           <img src="portfolio1_wireframe.png" alt="人物紹介サイトワイヤーフレーム" />
           <div class="work-text">
             <h3>人物紹介サイト ワイヤーフレーム</h3>
@@ -110,7 +114,7 @@
         </div>
 
         <!-- 作品3 -->
-        <div class="work">
+        <div class="work" data-aos="fade-up">
           <img src="portfolio2_wireframe.png" alt="夏祭りサイトワイヤーフレーム" />
           <div class="work-text">
             <h3>夏祭りサイト ワイヤーフレーム</h3>
