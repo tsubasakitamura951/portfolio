@@ -17,8 +17,21 @@ section {
   scroll-margin-top: 20px;
 }
 
+h1 {
+  border-left: 10px double #5fd45f;
+  border-right: 10px double #5fd45f;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
 h2 {
   margin-bottom: 20px;
+  padding: 0 15px;
+  border-left: 10px double #5fd45f;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #111;
+  border-radius: 5px;
 }
 
 /* ヘッダー */
@@ -172,7 +185,7 @@ h2 {
 .s2 img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /* about */
