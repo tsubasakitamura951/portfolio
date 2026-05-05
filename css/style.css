@@ -129,7 +129,7 @@ h2 {
 }
 
 .hamburger.active .hamburger-line:nth-child(3) {
-  top: 50%; /* ←ここ重要（bottomじゃなくtopに統一） */
+  top: 50%; 
   transform: translateY(-50%) rotate(-45deg);
 }
 
