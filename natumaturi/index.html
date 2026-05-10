@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>仮想夏祭りサイト</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>
+          <div class="header-title"><img src="img/natumaturi_title.png" alt="夏祭りタイトル文字" /></div>
+        </h1>
+        <div class="header-nav">
+          <nav class="desktop-nav" aria-label="PCメニュー">
+            <ul>
+              <li><a href="#schedule">SCHEDULE</a></li>
+              <li><a href="#event">EVENT</a></li>
+              <li><a href="#access">ACCESS</a></li>
+            </ul>
+          </nav>
+          <nav class="mobile-nav" aria-label="モバイルメニュー">
+            <div>
+              <ul>
+                <li><a href="#schedule">SCHEDULE</a></li>
+                <li><a href="#event">EVENT</a></li>
+                <li><a href="#access">ACCESS</a></li>
+              </ul>
+            </div>
+          </nav>
+          <button class="hamburger" aria-label="モバイルメニュー開閉ボタン">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+        <div class="hamburger-overlay"></div>
+      </header>
+      <main>
+        <div class="main-visual">
+          <img src="img/natumaturi-title.png" alt="夏祭りタイトル文字" />
+        </div>
+
+        <section id="schedule">
+          <h2>
+            <span class="h2-en">SCHEDULE</span>
+            <span class="h2-jp">開催日程</span>
+          </h2>
+          <dl class="schedule-card bg-beer-garden">
+            <dt>
+              <span class="">BEER GARDEN</span>
+              <span>ビアガーデン</span>
+            </dt>
+            <dd class="schedule-content">
+              <time datetime="2026-08-01">
+                <span class="text-year">2026</span>
+                <div class="time-item">
+                  <span class="text-month">08.</span>
+                  <span class="text-day">01</span>
+                </div>
+                <span class="text-week">[SAT]</span>
+              </time>
+              <span>～</span>
+              <time datetime="2026-08-16">
+                <span class="text-year">2026</span>
+                <div class="time-item">
+                  <span class="text-month">08.</span>
+                  <span class="text-day">16</span>
+                </div>
+                <span class="text-week">[SUN]</span>
+              </time>
+            </dd>
+          </dl>
+
+          <dl class="schedule-card bg-fireworks">
+            <dt>
+              <span class="">FIREWORKS</span>
+              <span>花火大会</span>
+            </dt>
+            <dd class="schedule-content">
+              <time datetime="2026-08-14">
+                <span class="text-year">2026</span>
+                <div class="time-item">
+                  <span class="text-month">08.</span>
+                  <span class="text-day">14</span>
+                </div>
+                <span class="text-week">[FRI]</span>
+              </time>
+              <span>～</span>
+              <time datetime="2026-08-16">
+                <span class="text-year">2026</span>
+                <div class="time-item">
+                  <span class="text-month">08.</span>
+                  <span class="text-day">16</span>
+                </div>
+                <span class="text-week">[SUN]</span>
+              </time>
+            </dd>
+          </dl>
+        </section>
+
+        <section id="event">
+          <h2>
+            <span class="h2-en">EVENT</span>
+            <span class="h2-jp">イベント紹介</span>
+          </h2>
+          <div class="event-container">
+            <div class="event-item">
+              <div class="event-img"><img src="img/beer.png" alt="ビアガーデンのイメージ" /></div>
+              <div class="event-text">
+                <h3 class="event-h3">ビアガーデン</h3>
+                <p>あああああああああああああああああ</p>
+                <p>ああああああああああああああ</p>
+                <p>あああああああああああああ</p>
+                <p>ああああ</p>
+                <p>あああああああああああああああああ</p>
+              </div>
+            </div>
+            <div class="event-access"><a href="#access">アクセス情報</a></div>
+
+            <div class="event-item reverse">
+              <div class="event-img event-img-reverse"><img src="img/fireworks_small_img.png" alt="花火大会のイメージ" /></div>
+              <div class="event-text">
+                <h3 class="event-h3">花火大会</h3>
+                <p>あああああああああああああああああ</p>
+                <p>ああああああああああああああ</p>
+                <p>あああああああああああああ</p>
+                <p>ああああ</p>
+                <p>あああああああああああああああああ</p>
+              </div>
+            </div>
+            <div class="event-access"><a href="#access">アクセス情報</a></div>
+          </div>
+        </section>
+
+        <section class="access" id="access">
+          <h2>
+            <span class="h2-en">ACCESS</span>
+            <span class="h2-jp">アクセス</span>
+          </h2>
+          <div class="access-container">
+            <div class="access-inner">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11660.684196101125!2d141.34537997512996!3d43.058869943051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b295148c5d329%3A0xe6cb236ed20e09e!2z5aSn6YCa5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1778447767438!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <h3 class="access-h3">大通公園</h3>
+              <dl>
+                <div class="access-item">
+                  <dt>住所</dt>
+                  <dd>札幌市中央区大通○○○○</dd>
+                </div>
+                <div class="access-item">
+                  <dt>アクセス</dt>
+                  <dd>地下鉄南北線・東西線○○○○</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="access-inner">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1457.9898596972191!2d141.3565062218377!3d43.04185820471039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a23667a656b%3A0x98dc98afec55a1f!2z44CSMDY0LTA5MTQg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65Y2X77yR77yU5p2h6KW_77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1778447934813!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <h3 class="access-h3">豊平川</h3>
+              <dl>
+                <div class="access-item">
+                  <dt>住所</dt>
+                  <dd>札幌市中央区○○○○</dd>
+                </div>
+                <div class="access-item">
+                  <dt>アクセス</dt>
+                  <dd>地下鉄南北線○○○○</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-img">
+        <div class="footer-icon"><img src="img/natumaturi_icon.png" alt="夏祭りのアイコン" /></div>
+        <div class="footer-title"><img src="img/natumaturi_title.png" alt="" /></div>
+        <p class="maturi-text">夏祭り実行委員会</p>
+        <p>
+          〒060-0000 札幌市中央区北〇条西〇丁目<br />
+          〇〇センター2F
+        </p>
+        <p>8月1日～8月16日　TEL：011-000-0000</p>
+        <p>上記期間以外　TEL：011-000-0000</p>
+        <p class="footer-last-text">（事務局：〇〇観光 平日8時45分～17時15分）</p>
+      </div>
+      <p class="copy">&copy; <small>Copyright © 2026 summer festival All Rights Reserved.</small></p>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
