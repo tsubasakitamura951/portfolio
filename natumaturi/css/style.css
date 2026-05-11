@@ -8,6 +8,7 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   background-color: #fff7e8;
   color: #1d1d1d;
+  font-size: 16px;
 }
 
 .wrap {
@@ -23,14 +24,14 @@ h2 {
 .h2-en {
   font-weight: 300;
   text-align: center;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 400;
   color: #c90000;
   line-height: 1em;
 }
 
 .h2-jp {
-  font-size: 60px;
+  font-size: 36px;
   font-weight: 300;
   text-align: center;
   color: #1d1d1d;
@@ -39,7 +40,7 @@ h2 {
 }
 
 .event-h3 {
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 300;
   text-align: center;
   margin-bottom: 24px;
@@ -60,21 +61,26 @@ header {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-between;
-  height: 120px;
+  height: 64px;
   width: 100%;
+  padding: 8px;
 }
 
 .header-title {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 20px;
+}
+
+.header-title img {
+  height: 44px;
+  width: auto;
 }
 
 .header-title::before {
   content: "";
-  width: 80px;
-  height: 80px;
+  width: 44px;
+  height: 44px;
   background: url(../img/natumaturi_icon.png) no-repeat center / contain;
   flex-shrink: 0;
 }
@@ -87,7 +93,6 @@ header {
 .header-nav {
   display: flex;
   align-items: center;
-  padding-right: 20px;
 }
 
 .header div .mobile-nav ul {
@@ -151,8 +156,8 @@ header {
 }
 
 .hamburger {
-  width: 87px;
-  height: 60px;
+  width: 52px;
+  height: 44px;
   position: relative;
   background: none;
   border: none;
@@ -267,13 +272,14 @@ footer {
   top: 10%;
   right: 8%;
   background-color: #3d62ade6;
+  width: 130px;
   padding: 20px;
 }
 
 /* 開催日程 */
 
 #schedule {
-  padding: 0 47px;
+  padding: 0 24px;
   margin-bottom: 150px;
 }
 
@@ -294,7 +300,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 30px 20px 40px;
+  padding: 20px 10px;
   margin-bottom: 40px;
 }
 
@@ -314,13 +320,13 @@ footer {
 }
 
 .schedule-title-en {
-  font-size: 24px;
+  font-size: 16px;
   color: #c90000;
   line-height: 1em;
 }
 
 .schedule-title-ja {
-  font-size: 48px;
+  font-size: 28px;
   color: #1d1d1d;
   line-height: 1em;
 }
@@ -346,6 +352,7 @@ footer {
   background-image: url(../img/hizukeback2.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .schedule-content time * {
@@ -353,31 +360,31 @@ footer {
 }
 
 .time-nami-item {
-  font-size: 36px;
+  font-size: clamp(20px, 4vw, 36px);
 }
 
 .text-year {
-  font-size: 18px;
+  font-size: clamp(14px, 3vw, 18px);
   width: 100%;
   text-align: end;
-  padding-right: 37px;
+  padding-right: 2vw;
 }
 
 .text-month {
-  font-size: 56px;
+  font-size: clamp(24px, 6vw, 56px);
 }
 
 .text-day {
-  font-size: 90px;
+  font-size: clamp(36px, 8vw, 90px);
   line-height: 0.5em;
 }
 
 .text-week {
-  font-size: 18px;
+  font-size: clamp(14px, 3vw, 18px);
   line-height: 0;
   width: 100%;
   text-align: end;
-  padding-right: 30px;
+  padding-right: 2vw;
 }
 
 .time-item {
@@ -390,26 +397,38 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 18px;
-  height: 80px;
+  font-size: 16px;
+  height: 48px;
   padding: 28px 0;
   border-radius: 35px;
 }
 
 .schedule-card-button.description {
   background-color: #f6c445;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .schedule-card-button.access {
   border: 1px solid #3d62ad;
   margin-bottom: 0;
+  background-color: #fff;
 }
 
 /* イベント紹介 */
-.event-img img {
-  display: block;
-  margin: 0 auto 28px;
+.event-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 574 / 352;
+}
+
+.event-bg.beer-garden {
+  background-image: url(../img/beer.png);
+}
+
+.event-bg.fireworks {
+  background-image: url(../img/fireworks_small_img.png);
 }
 
 .event-item {
@@ -417,7 +436,7 @@ footer {
 }
 
 .event-content {
-  padding: 0 47px;
+  padding: 0 24px;
 }
 
 .event-text {
@@ -425,18 +444,16 @@ footer {
 }
 
 .event-text p {
-  font-size: 24px;
   font-weight: 300;
 }
 
 .event-access {
   display: flex;
   background-color: #f6c445;
-  font-size: 18px;
   margin: 0 47px;
   max-width: 480px;
   width: 100%;
-  height: 80px;
+  height: 48px;
   align-items: center;
   justify-content: center;
   margin: 0 auto 160px;
@@ -446,12 +463,12 @@ footer {
 /* アクセス情報 */
 
 .access {
-  padding: 0 47px;
+  padding: 0 24px;
   margin: 0 auto 160px;
 }
 
 .access-h3 {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 300;
   margin-bottom: 34px;
 }
@@ -469,17 +486,15 @@ footer {
 }
 
 .access-item dt {
-  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 120px;
   height: 36px;
-  font-size: 24px;
   color: #fff;
-  text-align: center;
   border-radius: 5px;
   background-color: #3d62ad;
-}
-
-.access-item dd {
-  font-size: 24px;
 }
 
 .access-title {
@@ -524,8 +539,13 @@ footer {
     padding: 20px;
   }
 
+  #schedule {
+    padding: 0;
+  }
+
   .schedule-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 40px;
   }
@@ -540,18 +560,21 @@ footer {
     gap: 40px;
   }
 
+  .event-bg {
+    flex: 1;
+  }
+
+  .event-content {
+    flex: 1;
+    padding: 0;
+  }
+
   .event-item.reverse {
     flex-direction: row-reverse;
   }
 
-  .event-img {
-    flex: 1;
-  }
-
-  .event-img img {
-    width: 100%;
-    height: auto;
-    display: block;
+  .event-access {
+    max-width: 300px;
   }
 
   .event-text {
