@@ -4,6 +4,10 @@
 
 /* 共通 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Noto Sans JP", sans-serif;
   background-color: #fff7e8;
@@ -63,7 +67,7 @@ header {
   justify-content: space-between;
   height: 64px;
   width: 100%;
-  padding: 8px;
+  padding: 8px 12px 8px 8px;
 }
 
 .header-title {
@@ -73,7 +77,7 @@ header {
 }
 
 .header-title img {
-  height: 44px;
+  height: 40px;
   width: auto;
 }
 
@@ -281,6 +285,7 @@ footer {
 #schedule {
   padding: 0 24px;
   margin-bottom: 150px;
+  scroll-margin-top: 64px;
 }
 
 .schedule-container {
@@ -348,11 +353,15 @@ footer {
 .schedule-content time::before {
   content: "";
   position: absolute;
-  inset: -20px;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + clamp(16px, 4.8vw, 36px));
+  height: calc(100% + clamp(16px, 4.8vw, 36px));
+  transform: translate(-50%, -50%);
   background-image: url(../img/hizukeback2.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .schedule-content time * {
@@ -360,27 +369,27 @@ footer {
 }
 
 .time-nami-item {
-  font-size: clamp(20px, 4vw, 36px);
+  font-size: clamp(22px, calc(15.3px + 1.73vw), 36px);
 }
 
 .text-year {
-  font-size: clamp(14px, 3vw, 18px);
+  font-size: clamp(14px, calc(12.1px + 0.49vw), 18px);
   width: 100%;
   text-align: end;
   padding-right: 2vw;
 }
 
 .text-month {
-  font-size: clamp(24px, 6vw, 56px);
+  font-size: clamp(32px, calc(20.4px + 2.96vw), 56px);
 }
 
 .text-day {
-  font-size: clamp(36px, 8vw, 90px);
+  font-size: clamp(46px, calc(24.8px + 5.43vw), 90px);
   line-height: 0.5em;
 }
 
 .text-week {
-  font-size: clamp(14px, 3vw, 18px);
+  font-size: clamp(12px, calc(9.1px + 0.74vw), 18px);
   line-height: 0;
   width: 100%;
   text-align: end;
@@ -393,14 +402,18 @@ footer {
 }
 
 .schedule-card-button {
+  width: 100%;
+  font-size: 16px;
+  height: 48px;
+  border-radius: 35px;
+}
+
+.schedule-card-button a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 16px;
-  height: 48px;
-  padding: 28px 0;
-  border-radius: 35px;
+  height: 100%;
 }
 
 .schedule-card-button.description {
@@ -415,6 +428,11 @@ footer {
 }
 
 /* イベント紹介 */
+
+#event {
+  scroll-margin-top: 64px;
+}
+
 .event-bg {
   background-repeat: no-repeat;
   background-size: cover;
@@ -435,6 +453,14 @@ footer {
   margin-bottom: 120px;
 }
 
+#beer-garden {
+  scroll-margin-top: 64px;
+}
+
+#fireworks {
+  scroll-margin-top: 64px;
+}
+
 .event-content {
   padding: 0 24px;
 }
@@ -448,23 +474,29 @@ footer {
 }
 
 .event-access {
-  display: flex;
   background-color: #f6c445;
   margin: 0 47px;
   max-width: 480px;
   width: 100%;
   height: 48px;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto 160px;
   border-radius: 40px;
 }
 
+.event-access a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 /* アクセス情報 */
 
-.access {
+#access {
   padding: 0 24px;
   margin: 0 auto 160px;
+  scroll-margin-top: 64px;
 }
 
 .access-h3 {
