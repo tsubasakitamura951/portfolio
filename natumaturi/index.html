@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/ress.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+
     <title>仮想夏祭りサイト</title>
   </head>
   <body>
@@ -48,57 +50,70 @@
             <span class="h2-en">SCHEDULE</span>
             <span class="h2-jp">開催日程</span>
           </h2>
-          <dl class="schedule-card bg-beer-garden">
-            <dt>
-              <span class="">BEER GARDEN</span>
-              <span>ビアガーデン</span>
-            </dt>
-            <dd class="schedule-content">
-              <time datetime="2026-08-01">
-                <span class="text-year">2026</span>
-                <div class="time-item">
-                  <span class="text-month">08.</span>
-                  <span class="text-day">01</span>
-                </div>
-                <span class="text-week">[SAT]</span>
-              </time>
-              <span>～</span>
-              <time datetime="2026-08-16">
-                <span class="text-year">2026</span>
-                <div class="time-item">
-                  <span class="text-month">08.</span>
-                  <span class="text-day">16</span>
-                </div>
-                <span class="text-week">[SUN]</span>
-              </time>
-            </dd>
-          </dl>
-
-          <dl class="schedule-card bg-fireworks">
-            <dt>
-              <span class="">FIREWORKS</span>
-              <span>花火大会</span>
-            </dt>
-            <dd class="schedule-content">
-              <time datetime="2026-08-14">
-                <span class="text-year">2026</span>
-                <div class="time-item">
-                  <span class="text-month">08.</span>
-                  <span class="text-day">14</span>
-                </div>
-                <span class="text-week">[FRI]</span>
-              </time>
-              <span>～</span>
-              <time datetime="2026-08-16">
-                <span class="text-year">2026</span>
-                <div class="time-item">
-                  <span class="text-month">08.</span>
-                  <span class="text-day">16</span>
-                </div>
-                <span class="text-week">[SUN]</span>
-              </time>
-            </dd>
-          </dl>
+          <div class="schedule-container">
+            <div class="schedule-card bg-beer-garden">
+              <dl>
+                <dt>
+                  <span class="schedule-title-en">BEER GARDEN</span>
+                  <span class="schedule-title-ja">ビアガーデン</span>
+                </dt>
+                <dd class="schedule-content">
+                  <time datetime="2026-08-01">
+                    <span class="text-year">2026</span>
+                    <div class="time-item">
+                      <span class="text-month">08.</span>
+                      <span class="text-day">01</span>
+                    </div>
+                    <span class="text-week">[SAT]</span>
+                  </time>
+                  <span class="time-nami-item">～</span>
+                  <time datetime="2026-08-16">
+                    <span class="text-year">2026</span>
+                    <div class="time-item">
+                      <span class="text-month">08.</span>
+                      <span class="text-day">16</span>
+                    </div>
+                    <span class="text-week">[SUN]</span>
+                  </time>
+                </dd>
+              </dl>
+              <div class="schedule-card-buttons">
+                <div class="schedule-card-button description"><a href="">会場詳細</a></div>
+                <div class="schedule-card-button access"><a href="">アクセス情報</a></div>
+              </div>
+            </div>
+            <div class="schedule-card bg-fireworks">
+              <dl>
+                <dt>
+                  <span class="schedule-title-en">FIREWORKS</span>
+                  <span class="schedule-title-ja">花火大会</span>
+                </dt>
+                <dd class="schedule-content">
+                  <time datetime="2026-08-14">
+                    <span class="text-year">2026</span>
+                    <div class="time-item">
+                      <span class="text-month">08.</span>
+                      <span class="text-day">14</span>
+                    </div>
+                    <span class="text-week">[FRI]</span>
+                  </time>
+                  <span class="time-nami-item">～</span>
+                  <time datetime="2026-08-16">
+                    <span class="text-year">2026</span>
+                    <div class="time-item">
+                      <span class="text-month">08.</span>
+                      <span class="text-day">16</span>
+                    </div>
+                    <span class="text-week">[SUN]</span>
+                  </time>
+                </dd>
+              </dl>
+              <div class="schedule-card-buttons">
+                <div class="schedule-card-button description"><a href="">会場詳細</a></div>
+                <div class="schedule-card-button access"><a href="">アクセス情報</a></div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="event">
@@ -109,29 +124,33 @@
           <div class="event-container">
             <div class="event-item">
               <div class="event-img"><img src="img/beer.png" alt="ビアガーデンのイメージ" /></div>
-              <div class="event-text">
-                <h3 class="event-h3">ビアガーデン</h3>
-                <p>あああああああああああああああああ</p>
-                <p>ああああああああああああああ</p>
-                <p>あああああああああああああ</p>
-                <p>ああああ</p>
-                <p>あああああああああああああああああ</p>
+              <div class="event-content">
+                <div class="event-text">
+                  <h3 class="event-h3">ビアガーデン</h3>
+                  <p>あああああああああああああああああ</p>
+                  <p>ああああああああああああああ</p>
+                  <p>あああああああああああああ</p>
+                  <p>ああああ</p>
+                  <p>あああああああああああああああああ</p>
+                </div>
+                <div class="event-access"><a href="#access">アクセス情報</a></div>
               </div>
             </div>
-            <div class="event-access"><a href="#access">アクセス情報</a></div>
 
             <div class="event-item reverse">
               <div class="event-img event-img-reverse"><img src="img/fireworks_small_img.png" alt="花火大会のイメージ" /></div>
-              <div class="event-text">
-                <h3 class="event-h3">花火大会</h3>
-                <p>あああああああああああああああああ</p>
-                <p>ああああああああああああああ</p>
-                <p>あああああああああああああ</p>
-                <p>ああああ</p>
-                <p>あああああああああああああああああ</p>
+              <div class="event-content">
+                <div class="event-text">
+                  <h3 class="event-h3">花火大会</h3>
+                  <p>あああああああああああああああああ</p>
+                  <p>ああああああああああああああ</p>
+                  <p>あああああああああああああ</p>
+                  <p>ああああ</p>
+                  <p>あああああああああああああああああ</p>
+                </div>
+                <div class="event-access"><a href="#access">アクセス情報</a></div>
               </div>
             </div>
-            <div class="event-access"><a href="#access">アクセス情報</a></div>
           </div>
         </section>
 
@@ -204,6 +223,6 @@
       </div>
       <p class="copy">&copy; <small>Copyright © 2026 summer festival All Rights Reserved.</small></p>
     </footer>
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
